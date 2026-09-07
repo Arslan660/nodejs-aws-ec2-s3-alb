@@ -4,7 +4,8 @@ const app = express();
 const PORT = 3000;
 
 const s3 = new AWS.S3();
-const BUCKET_NAME = arslan-node-app-bucket-2026 // baad mein update karoge
+const BUCKET_NAME = 'arslan-node-app-bucket-2026';
+
 
 app.get('/', (req, res) => {
   res.send('<h1>Node.js App Running on EC2!</h1><p>Hostname: ' + require('os').hostname() + '</p>');
